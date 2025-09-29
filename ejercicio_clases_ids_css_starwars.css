@@ -1,0 +1,140 @@
+/* Paleta inspirada en Star Wars: negro, dorado, gris, azul oscuro */
+
+body {
+    background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%);
+    color: #ffd700;
+    font-family: 'Orbitron', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #222;
+    color: #ffd700;
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    text-shadow: 0 0 10px #ffd70080;
+}
+
+nav {
+    background: #1b263b;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.main-content {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #222a;
+    border-radius: 12px;
+    box-shadow: 0 0 24px #000a;
+    padding: 2rem;
+}
+
+h1, h2, h3 {
+    color: #ffd700;
+    font-family: 'Orbitron', 'Arial', sans-serif;
+    margin-top: 0;
+}
+
+.starwars-title {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-shadow: 0 0 20px #ffd70080, 0 0 4px #fff;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    background: #1b263b;
+    border: 2px solid #ffd700;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 10px #ffd70040;
+    color: #fff;
+}
+
+.card .card-title {
+    color: #ffd700;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.button {
+    background: #ffd700;
+    color: #222;
+    border: none;
+    border-radius: 4px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 0 8px #ffd70080;
+}
+
+.button:hover {
+    background: #fff;
+    color: #1b263b;
+}
+
+footer {
+    background: #222;
+    color: #ffd700;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid #ffd70040;
+}
+
+/* Ejemplo de clase para personajes */
+.personaje {
+    background: #0d1b2a;
+    border-left: 4px solid #ffd700;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+/* Ejemplo de id para destacar */
+#destacado {
+    background: #ffd700;
+    color: #222;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 0 12px #ffd70080;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .main-content {
+        padding: 1rem;
+    }
+    .starwars-title {
+        font-size: 2rem;
+    }
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
